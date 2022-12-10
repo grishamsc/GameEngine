@@ -10,6 +10,8 @@
 		7D3937902945470100AD1BE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D39378F2945470100AD1BE5 /* AppDelegate.swift */; };
 		7D3937942945470200AD1BE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D3937932945470200AD1BE5 /* Assets.xcassets */; };
 		7D3937972945470200AD1BE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D3937952945470200AD1BE5 /* Main.storyboard */; };
+		7D3937A0294548CA00AD1BE5 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D39379F294548CA00AD1BE5 /* GameView.swift */; };
+		7D3937A229454C4A00AD1BE5 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 7D3937A129454C4A00AD1BE5 /* Shaders.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +20,8 @@
 		7D3937932945470200AD1BE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D3937962945470200AD1BE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7D3937982945470200AD1BE5 /* GameEngine.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GameEngine.entitlements; sourceTree = "<group>"; };
+		7D39379F294548CA00AD1BE5 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		7D3937A129454C4A00AD1BE5 /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,8 @@
 			isa = PBXGroup;
 			children = (
 				7D3937952945470200AD1BE5 /* Main.storyboard */,
+				7D39379F294548CA00AD1BE5 /* GameView.swift */,
+				7D3937A129454C4A00AD1BE5 /* Shaders.metal */,
 				7D39379E294547EA00AD1BE5 /* Other Files */,
 			);
 			path = GameEngine;
@@ -136,6 +142,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D3937A229454C4A00AD1BE5 /* Shaders.metal in Sources */,
+				7D3937A0294548CA00AD1BE5 /* GameView.swift in Sources */,
 				7D3937902945470100AD1BE5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
