@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7D3937902945470100AD1BE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D39378F2945470100AD1BE5 /* AppDelegate.swift */; };
-		7D3937922945470100AD1BE5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3937912945470100AD1BE5 /* ViewController.swift */; };
 		7D3937942945470200AD1BE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D3937932945470200AD1BE5 /* Assets.xcassets */; };
 		7D3937972945470200AD1BE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D3937952945470200AD1BE5 /* Main.storyboard */; };
 /* End PBXBuildFile section */
@@ -16,7 +15,6 @@
 /* Begin PBXFileReference section */
 		7D39378C2945470100AD1BE5 /* GameEngine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameEngine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D39378F2945470100AD1BE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7D3937912945470100AD1BE5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7D3937932945470200AD1BE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D3937962945470200AD1BE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7D3937982945470200AD1BE5 /* GameEngine.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GameEngine.entitlements; sourceTree = "<group>"; };
@@ -52,13 +50,20 @@
 		7D39378E2945470100AD1BE5 /* GameEngine */ = {
 			isa = PBXGroup;
 			children = (
-				7D39378F2945470100AD1BE5 /* AppDelegate.swift */,
-				7D3937912945470100AD1BE5 /* ViewController.swift */,
-				7D3937932945470200AD1BE5 /* Assets.xcassets */,
 				7D3937952945470200AD1BE5 /* Main.storyboard */,
-				7D3937982945470200AD1BE5 /* GameEngine.entitlements */,
+				7D39379E294547EA00AD1BE5 /* Other Files */,
 			);
 			path = GameEngine;
+			sourceTree = "<group>";
+		};
+		7D39379E294547EA00AD1BE5 /* Other Files */ = {
+			isa = PBXGroup;
+			children = (
+				7D39378F2945470100AD1BE5 /* AppDelegate.swift */,
+				7D3937932945470200AD1BE5 /* Assets.xcassets */,
+				7D3937982945470200AD1BE5 /* GameEngine.entitlements */,
+			);
+			path = "Other Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,7 +136,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D3937922945470100AD1BE5 /* ViewController.swift in Sources */,
 				7D3937902945470100AD1BE5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,7 +272,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = GameEngine/GameEngine.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "GameEngine/Other Files/GameEngine.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -293,7 +297,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = GameEngine/GameEngine.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "GameEngine/Other Files/GameEngine.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
