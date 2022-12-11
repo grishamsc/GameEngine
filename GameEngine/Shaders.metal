@@ -1,9 +1,10 @@
 #include <metal_stdlib>
 using namespace metal;
 
-vertex float4 basic_vertex_shader()
+vertex float4 basic_vertex_shader(const device simd::float3 *vertices [[buffer(0)]],
+                                  uint vertexID [[vertex_id]])
 {
-    return float4(1);
+    return float4(vertices[vertexID], 1);
 }
 
 fragment half4 basic_fragment_shader()
