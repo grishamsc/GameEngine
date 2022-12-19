@@ -2,8 +2,8 @@
 using namespace metal;
 
 struct VertexIn {
-    simd::float3 position;
-    simd::float4 color;
+    simd::float3 position [[ attribute(0) ]];
+    simd::float4 color [[ attribute(1) ]];
 };
 
 struct RasterizerData {
@@ -11,13 +11,12 @@ struct RasterizerData {
     simd::float4 color;
 };
 
-vertex RasterizerData basic_vertex_shader(const device VertexIn *vertices [[buffer(0)]],
-                                  uint vertexID [[vertex_id]])
+vertex RasterizerData basic_vertex_shader(const VertexIn vIn [[ stage_in ]])
 {
     RasterizerData data;
 
-    data.position = float4(vertices[vertexID].position, 1);
-    data.color = vertices[vertexID].color;
+    data.position = float4(vIn.position, 1);
+    data.color = vIn.color;
 
     return data;
 }
