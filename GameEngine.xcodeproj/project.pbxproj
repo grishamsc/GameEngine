@@ -15,6 +15,8 @@
 		7D5FBE042950DD390092DF61 /* VertexDescriptorLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5FBE032950DD390092DF61 /* VertexDescriptorLibrary.swift */; };
 		7D5FBE062950DEA30092DF61 /* RenderPipelineDescriptorLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5FBE052950DEA30092DF61 /* RenderPipelineDescriptorLibrary.swift */; };
 		7D5FBE082950E6F40092DF61 /* RenderPipelineStateLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5FBE072950E6F40092DF61 /* RenderPipelineStateLibrary.swift */; };
+		7D5FBE0B2950EB3F0092DF61 /* GameObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5FBE0A2950EB3F0092DF61 /* GameObject.swift */; };
+		7D5FBE0D2950ECAD0092DF61 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5FBE0C2950ECAD0092DF61 /* Renderer.swift */; };
 		7DCF052F2950CEE300323DA7 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCF052E2950CEE300323DA7 /* Types.swift */; };
 		7DCF05352950D5B600323DA7 /* Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCF05342950D5B600323DA7 /* Engine.swift */; };
 		7DCF05372950D6E200323DA7 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCF05362950D6E200323DA7 /* Preferences.swift */; };
@@ -32,6 +34,8 @@
 		7D5FBE032950DD390092DF61 /* VertexDescriptorLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VertexDescriptorLibrary.swift; sourceTree = "<group>"; };
 		7D5FBE052950DEA30092DF61 /* RenderPipelineDescriptorLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderPipelineDescriptorLibrary.swift; sourceTree = "<group>"; };
 		7D5FBE072950E6F40092DF61 /* RenderPipelineStateLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderPipelineStateLibrary.swift; sourceTree = "<group>"; };
+		7D5FBE0A2950EB3F0092DF61 /* GameObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameObject.swift; sourceTree = "<group>"; };
+		7D5FBE0C2950ECAD0092DF61 /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
 		7DCF052E2950CEE300323DA7 /* Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
 		7DCF05342950D5B600323DA7 /* Engine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Engine.swift; sourceTree = "<group>"; };
 		7DCF05362950D6E200323DA7 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
@@ -68,6 +72,7 @@
 		7D39378E2945470100AD1BE5 /* GameEngine */ = {
 			isa = PBXGroup;
 			children = (
+				7D5FBE092950EB230092DF61 /* Game Things */,
 				7DCF05302950D4B600323DA7 /* Core */,
 				7DCF05332950D4DF00323DA7 /* Libraries */,
 				7DCF05312950D4C000323DA7 /* Display */,
@@ -87,6 +92,14 @@
 			path = "Other Files";
 			sourceTree = "<group>";
 		};
+		7D5FBE092950EB230092DF61 /* Game Things */ = {
+			isa = PBXGroup;
+			children = (
+				7D5FBE0A2950EB3F0092DF61 /* GameObject.swift */,
+			);
+			path = "Game Things";
+			sourceTree = "<group>";
+		};
 		7DCF05302950D4B600323DA7 /* Core */ = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +115,7 @@
 			children = (
 				7D39379F294548CA00AD1BE5 /* GameView.swift */,
 				7D3937952945470200AD1BE5 /* Main.storyboard */,
+				7D5FBE0C2950ECAD0092DF61 /* Renderer.swift */,
 			);
 			path = Display;
 			sourceTree = "<group>";
@@ -195,9 +209,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D5FBE0B2950EB3F0092DF61 /* GameObject.swift in Sources */,
 				7D3937A229454C4A00AD1BE5 /* Shaders.metal in Sources */,
 				7D3937A0294548CA00AD1BE5 /* GameView.swift in Sources */,
 				7D5FBE042950DD390092DF61 /* VertexDescriptorLibrary.swift in Sources */,
+				7D5FBE0D2950ECAD0092DF61 /* Renderer.swift in Sources */,
 				7DCF05372950D6E200323DA7 /* Preferences.swift in Sources */,
 				7D5FBE082950E6F40092DF61 /* RenderPipelineStateLibrary.swift in Sources */,
 				7D3937902945470100AD1BE5 /* AppDelegate.swift in Sources */,
