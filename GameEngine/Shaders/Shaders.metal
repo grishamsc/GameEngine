@@ -11,11 +11,16 @@ struct RasterizerData {
     simd::float4 color;
 };
 
-vertex RasterizerData basic_vertex_shader(const VertexIn vIn [[ stage_in ]])
+struct ModelConstants {
+    simd::float4x4 modelMatrix;
+};
+
+vertex RasterizerData basic_vertex_shader(const VertexIn vIn [[ stage_in ]],
+                                          constant ModelConstants &modelConstants [[ buffer(1) ]])
 {
     RasterizerData data;
 
-    data.position = float4(vIn.position, 1);
+    data.position = modelConstants.modelMatrix * float4(vIn.position, 1);
     data.color = vIn.color;
 
     return data;

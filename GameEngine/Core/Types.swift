@@ -28,8 +28,13 @@ extension Sizeable {
 }
 
 extension simd_float3: Sizeable {}
+extension Float: Sizeable {}
 
 struct Vertex: Sizeable {
     let position: simd_float3
     let color: simd_float4
+}
+
+struct ModelConstants: Sizeable {
+    var modelMatrix = matrix_identity_float4x4
 }

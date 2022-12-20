@@ -68,13 +68,13 @@ class TriangleCustomMesh: CustomMesh {
 class QuadCustomMesh: CustomMesh {
     override func createVertices() {
         vertices = [
-            Vertex(position: simd_float3(0.5, 0.5, 0), color: simd_float4(1, 0, 0, 1)),   // top right
-            Vertex(position: simd_float3(-0.5, 0.5, 0), color: simd_float4(0, 1, 0, 1)), // top left
-            Vertex(position: simd_float3(-0.5, -0.5, 0), color: simd_float4(0, 0, 1, 1)),  // bottom left
+            Vertex(position: simd_float3(1, 1, 0), color: simd_float4(1, 0, 0, 1)),   // top right
+            Vertex(position: simd_float3(-1, 1, 0), color: simd_float4(0, 1, 0, 1)), // top left
+            Vertex(position: simd_float3(-1, -1, 0), color: simd_float4(0, 0, 1, 1)),  // bottom left
 
-            Vertex(position: simd_float3(0.5, 0.5, 0), color: simd_float4(1, 0, 0, 1)),   // top right
-            Vertex(position: simd_float3(-0.5, -0.5, 0), color: simd_float4(0, 0, 1, 1)), // bottom left
-            Vertex(position: simd_float3(0.5, -0.5, 0), color: simd_float4(1, 0, 1, 1))   // bottom right
+            Vertex(position: simd_float3(1, 1, 0), color: simd_float4(1, 0, 0, 1)),   // top right
+            Vertex(position: simd_float3(-1, -1, 0), color: simd_float4(0, 0, 1, 1)), // bottom left
+            Vertex(position: simd_float3(1, -1, 0), color: simd_float4(1, 0, 1, 1))   // bottom right
         ]
     }
 }
